@@ -23,7 +23,7 @@
     </p>
     <p>
         <label for="number">Enter a Number</label>
-        <input id="number" type="number" placeholder="number" name="num">
+        <input id="number" type="number" min="1" max="1000" placeholder="number" name="num">
     </p>
     <button>Submit</button><!---will submit--->
 </form>
@@ -66,7 +66,32 @@
             <option value="steak">steak</option>
         </select>
     </p>
+    <p>
+        <label for="cheese">Amount of Cheese:</label>
+        <input type="range" id="cheese" min="1" max="10" value="7" name="cheese_level">
+        
+    </p>
+
+    <p>
+        <label for="requests">Any Special Requests</label>
+        <br>
+        <textarea name="requests" id="requests" cols="40" rows="10" placeholder="Type Here"></textarea>
+    </p>
     <button>Submit</button>
+    
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+        </p>
+
+        <p><input type="email" placeholder="email" required></p>
+        <p><input type="url" placeholder="url" required></p>
+        <button>Submit</button>
+    </form>
 </form>
 </body>
 </html>
