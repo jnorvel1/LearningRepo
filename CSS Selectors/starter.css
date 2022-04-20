@@ -1,0 +1,42 @@
+/*Element selector*/
+body {
+    background-color: beige;
+}
+
+button {
+    font-size: 30px;
+    background-color: #5fb6c9;
+}
+
+h1, h2 {
+    color: #023047;
+}
+
+/*ID Selector*/
+#signup {
+    background-color: #005f73;
+    color: #8ecae6;
+}
+
+span {
+    color: #8ecae6;
+}
+
+/*Class selector*/
+.tag {
+    background-color: red;
+    font-size: 18px;
+    color: white;
+}
+
+span a {
+    color: #005f73;
+}
+
+.post a {
+    color: darkgoldenrod;
+}
+
+footer a {
+    color: red;
+}
