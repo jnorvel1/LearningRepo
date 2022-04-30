@@ -35,8 +35,50 @@ span a {
 
 .post a {
     color: darkgoldenrod;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 footer a {
     color: red;
 }
+
+/*Pseudo Classes*/
+
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+.post button:active{
+    background-color: #02c39a;
+}
+
+.post:nth-of-type(2n){
+    background-color: #dfe8dc;
+}
+/*Pseudo Elements*/
+h2::first-letter{
+    font-size: 50px;
+}
+
+p::first-line{
+    color: purple;
+}
+
+p::selection{
+    background-color: orange;
+}
+
+.post button:hover{
+    background-color: red;
+    color: beige;
+}
+
+button:hover{
+    background-color: olive;
+}
+
+
+/*id > Class > Elements specificity ranking. ID will always win. Class beats elements*/
